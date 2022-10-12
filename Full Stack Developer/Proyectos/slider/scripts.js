@@ -1,4 +1,4 @@
-const slide = [
+/*const slide = [
   {
     img: "./_ (1).jpeg",
     name: "1"
@@ -15,19 +15,13 @@ const slide = [
     img: "./_ (1).jpeg",
     name: "4"
   }
-];
+];*/
+const slide = document.querySelectorAll(".slide");
 console.log(slide);
-/*const slide = document.querySelectorAll(".slide")
 
 const nextButton =document.querySelector(".next_button");
 
 const prevButton = document.querySelector(".prev_button");
-
-slide.forEach((function (slide, index) {
-  slide.style.left = `${index * 100}%`;
-}));
-
-let counter = 0;
 
 nextButton.addEventListener("click", function () {
   counter++;
@@ -39,19 +33,37 @@ prevButton.addEventListener("click", function(){
   carrusel();
 })
 
+slide.forEach((function (slide, index) {
+  slide.style.left = `${index * 100}%`;
+}));
+
+let counter = 0;
+
+
+
 function carrusel() {
 
-  if (carrusel === slide.length) {
+  /*if (carrusel === slide.length) {
     counter = 0;
   }
   if (counter < 0 ) {
-    counter = slide.length - 1;
+    counter = slide.length-1;
+  }*/
+
+
+  if (counter < slide.length-1) {
+    nextButton.style.display = "block";
+  } else {
+    nextButton.style.display = "none"
   }
 
-
+  if (counter > 0) {
+    prevButton.style.display ="block"
+  } else{
+    prevButton.style.display = "none"
+  }
   slide.forEach((function(slide) {
     slide.style.transform = `translateX(-${counter * 100}%)`
   }));
 
 }
-*/
