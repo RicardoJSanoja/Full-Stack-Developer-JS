@@ -4,18 +4,28 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Silkscreen"
+  font-family: "Silkscreen";
+  font-size: auto;
 }
 /*columnas*/
 .principal{
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   min-width: auto;
-  padding-top: auto;
+  padding-top: 30px;
+  height: auto;
+
 }
 .column{
   padding: 20px;
   color: #ffff;
+  width: 30%;
+  overflow: hidden;
+  transition: width .3s ease-in-out;
+}
+
+.column.activa{
+  width: 60%;
 }
 
 .column:first-of-type{
@@ -66,4 +76,8 @@ body{
   color:  rgb(39, 41, 50);
   background: white;
   border-radius: 15px
+}
+
+.texto{
+  padding-bottom: 10px;
 }
