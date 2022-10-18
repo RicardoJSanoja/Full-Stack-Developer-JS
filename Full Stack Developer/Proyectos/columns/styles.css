@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css2?family=Silkscreen&display=swap";
+/*cuerpo*/
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Silkscreen";
+  font-size: auto;
+}
+/*columnas*/
+.principal{
+  display: flex;
+  max-width: 1000px;
+  min-width: auto;
+  padding-top: 30px;
+  height: auto;
+
+}
+.column{
+  padding: 20px;
+  color: #ffff;
+  width: 30%;
+  overflow: hidden;
+  transition: width .3s ease-in-out;
+}
+
+.column.activa{
+  width: 60%;
+}
+
+.column:first-of-type{
+  border-radius: 10px 0 0 10px;
+}
+
+.column:last-of-type{
+  border-radius:  0 10px 10px 0;
+}
+/*imagenes*/
+.imagen{
+}
+
+/*articulos*/
+.flash{
+  background: rgb(219, 80, 74);
+}
+
+.heisenberg{
+  background: rgb(122, 132, 80);
+
+}
+
+.vader{
+  background: rgb(39, 41, 50)
+}
+
+/*links*/
+.link{
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.link-flash{
+  color: rgb(219, 80, 74);
+  background: White;
+  border-radius: 15px
+}
+
+.link-heisenberg{
+  color: rgb(122, 132, 80);
+  background: white;
+  border-radius: 15px
+}
+
+
+.link-vader{
+  color:  rgb(39, 41, 50);
+  background: white;
+  border-radius: 15px
+}
+
+.texto{
+  padding-bottom: 10px;
+}
