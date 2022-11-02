@@ -12,7 +12,11 @@ const movilMenu = document.querySelector(".mobile-menu");
 
 const carrito = document.querySelector(".navbar-shopping-cart"); //imagen
 
+
+const productoDetallado = document.querySelector("#detalle-producto");
+
 const productoDetallado = document.querySelector(".product-detail");
+
 
 const cardsContainer = document.querySelector(".cards-container");
 
@@ -50,10 +54,18 @@ function menuHamburguesaRetractil(){
 
 function productoDetailRetractil(){
   const isMovilMenuClose = movilMenu.classList.contains("inactive");
+
+  
   const isDesktopMenuClose = desktopMenu.classList.contains("inactive");
+
     if (!isMovilMenuClose) {
       movilMenu.classList.add("inactive");
     };
+
+
+  const isDesktopMenuClose = desktopMenu.classList.contains("inactive");
+
+
 
     if (!isDesktopMenuClose) {
       desktopMenu.classList.add("inactive")
@@ -136,7 +148,7 @@ for(product of productList){
 
   //figure donde va el icono - 7º
   const productInfoFigure = document.createElement("figure");
-  
+
   //icono img - 8º
   const imgInfo = document.createElement("img");
   imgInfo.setAttribute("src", "./icons/bt_add_to_cart.svg");
