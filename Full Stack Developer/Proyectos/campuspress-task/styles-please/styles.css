@@ -1,0 +1,135 @@
+/* navigation */
+body{
+  margin: 0;
+}
+
+.header-Nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgb(112 165 169);
+  padding-bottom: 15px;
+}
+
+.nav-Div-img{
+  margin-block-start: 10px;
+}
+
+.nav-wp-Img{
+      width: 6vw;
+}
+.nav-Links{
+  display: flex;
+  width: 33vw;
+  justify-content: flex-end;
+  background-color: white;
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+  height: 3vh;
+  padding: 9px;
+}
+
+.home-btn{
+  border: none;
+  background-color: white;
+  color:rgb(127 212 219);
+  font-size: 13px;
+}
+.blog-btn{
+  border: none;
+  background-color: white;
+  color:rgb(127 212 219);
+  font-size: 13px;
+
+}
+.sample-btn{
+  border: none;
+  background-color: white;
+  color:rgb(127 212 219);
+  font-size: 13px;
+
+}
+
+.img-pajaro{
+  width: 55vw;
+}
+.div-buscador{
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  background-color: white;
+  margin-top: -41px;
+}
+
+.input-buscador{
+  width:28.5vw;
+  border:none;
+
+}
+
+.btn-buscador{
+  border: none;
+  background-color: rgb(233 88 0 / 88%);
+  padding: 10px;
+  font-size: 10px;
+  width: 5vw;
+  margin-left: 5px !important;
+
+}
+
+.main-div{
+  display: grid;
+  grid-template: repeat(2,1fr)/repeat(3,1fr);
+  justify-items: center;
+  background-color: rgb(236 236 235 / 52%);
+  margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
+  margin-block-end: 10vh;
+  grid-column-gap: 0px;
+}
+
+.figureC{
+  margin-inline-start: 0;
+  margin-inline-end:0;
+
+}
+.img-h{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.item-img{
+  width: 30vw;
+  border-radius: 5px;
+}
+
+.h1-text{
+  display: inline-flex;
+  font-family: Serif ;
+  font-size: small;
+  justify-items: flex-start;
+  color: rgb(112 165 169);
+  text-decoration-color
+
+}
+
+footer{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+
+.h1-footer{
+  font-size: xx-large;
+  color:rgb(233 88 0 / 88%)
+}
+
+.p-footer{
+  font-family: 'Roboto', sans-serif;
+}
+
+.p-link{
+  color: rgb(112 165 169);
+}
